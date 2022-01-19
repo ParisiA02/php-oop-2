@@ -49,8 +49,7 @@
         private $dataAssunzione;
 
         public function __construct($nome, $cognome, $stipendio){
-            $this->nome = $nome;
-            $this->cognome = $cognome;
+            parent::__construct($nome, $cognome);
             $this->stipendio = $stipendio;
         }
 
